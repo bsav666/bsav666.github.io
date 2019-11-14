@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<title>本色福利-男人本色，发布页</title>
+	<style>
+		*{padding:0;margin:0;text-align:center;}
+		html,body{padding:0;margin:0;background:#000;font: "宋体";}
+		ul,li{list-style: none;}
+		h1{color: aqua;font-weight:normal;padding:40px 0;}
+		h2{width:16em;display:inline-block;background:#09f;color:#fff;font-size:20px;padding: 10px 0;font-weight:normal;border-radius:4px;cursor:pointer}
+		#main{background: #222;padding: 20px;display: inline-block;}
+		#content a{display:block;color:yellow;font-style:normal;display:block;margin:0.5em 0;text-decoration:none;font-size:14px;}
+		#content li{padding: 20px 0;border-bottom: 1px solid #E2E0DE;color:aliceblue;font-size:16px;}
+		@media only screen and (max-width:959px){html,body,h2{width:100%}}
+	</style>
+</head>
+<body>
+	<h1>本色福利 | 地址发布页</h1>
+	<div id="main">
+		<div id="content">
+			<h2 onclick="alert('避免找不到最新地址，请收藏此页面')">请 Ctrl+D 收藏本页</h2>
+			<ul>
+				<li>
+					<span style="display:block;color:#000;font-size:16px;background-color:#E2E0DE;width:100%">****最新地址****</span><br>
+					<span id="links">
+					</span>
+				</li>
+				<li>
+					<span style="display:block;color:#000;font-size:16px;background-color:#E2E0DE;width:100%">****海外地址****</span>
+					<a>https://benseav.com</a>
+				</li>
+				<li style="color:#f00;font-size: 14px">
+					<span style="display:block;color:#000;font-size:16px;background-color:#E2E0DE;width:100%">****备用地址****</span>
+					<a>https://bsav.cf</a>
+				</li>
+				<li style="color:#f00;font-size: 14px">警告！禁止未成年人进入！<br>若您未达当地成年年龄，请速离开！</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var links="bsav1.top";
+		var http="https://";
+		var arr=links.split(",");
+		for(var i=0;i<arr.length;i++){
+			var html=document.getElementById("links").innerHTML;
+  document.getElementById("links").innerHTML=html+'<a href="'+http+arr[i]+'" target="_self">'+http+arr[i]+'</a>';
+};
+	</script>
+</body>
+</html>
